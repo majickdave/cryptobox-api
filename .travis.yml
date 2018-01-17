@@ -1,4 +1,11 @@
 language: node_js
- node_js: node
- services:
-     - mongodb
+node_js: node
+services:
+- mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: E2HsjaVcH2i3ESDd/Nl72Bc5gK77l2QbaLuOahjxH351T1wEJov/tu/IbcNIERa2X3EjodC+n3bFoS437u3v3wbrTNBX+f0NiihohIJWldCeAui/QuaZ1ZkUK+4cOZlHHgoqfF2a5LDuvkwaogJvDO91Pg/DdwgncE3JW+9UF1GPYPOCL2DNag0CUoeNHayj7F9S65AZ4lVvS1SmYkWTm6tcP2M744/69oVizSGwHAIScPsCHySzxA2p1XzrC0LzMTycRz0drGdd9rbJF1UoVBYCA8F23TLZ36uxGLDw+evpVC9XMictRX2sNltTJBnurJ7eD7unulFRINyllRk6zXcSxr21j53jbiDTSY653N4CK+Dp/M4HkI1EvqH1g4OfbT1AtLTNG3MJiqHwI2fkNEKu3QEu9sV5bb9IHlhmAjRg+pZd0t2kf7Dj+/2qri7UMCkOAiNxlPhmO7FmVP/g9NNCMfuTHoqMNSGOqD37bRyZSdid5256WBKYvBLjx+baeYRg3QOJ347YfnNbGmiSIi2sUdGCfPjPw/aAOBkeULGFd1CWmfIYgt25VOAh83/QRuIskLWIBxWp7i7BgHuMq/FaGMiqP8WnyWuQnaffdBrHsPI/kNtoCeH8jMtn1gucgVV9KPqPDk1c6NxPyhu7/SinG5NGxqrkf5N/35KD55s=
+  app: safe-escarpment-21454
+  on:
+    repo: majickdave/cryptobox-api
